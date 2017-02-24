@@ -1,4 +1,4 @@
-:us: [:jp:](./doc/ja/README.md)　[![Build Status](https://travis-ci.org/sachin21/ruboty-dmm.svg?branch=master)](https://travis-ci.org/sachin21/ruboty-dmm)
+:us: [:jp:](./doc/ja/README.md) [![Build Status](https://travis-ci.org/sachin21/ruboty-dmm.svg?branch=master)](https://travis-ci.org/sachin21/ruboty-dmm) ![Gem Version](https://badge.fury.io/rb/ruboty-dmm.svg) [![Build Status](https://travis-ci.org/sachin21/ruboty-dmm.svg?branch=master)](https://travis-ci.org/sachin21/ruboty-dmm) [![Code Climate](https://codeclimate.com/github/sachin21/ruboty-dmm/badges/gpa.svg)](https://codeclimate.com/github/sachin21/ruboty-dmm) [![Gem](https://img.shields.io/gem/dt/ruboty-dmm.svg)](https://rubygems.org/gems/ruboty-dmm)
 
 # Ruboty DMM
 
