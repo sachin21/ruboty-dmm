@@ -19,16 +19,17 @@ gem 'ruboty-dmm'
 ### 1. 24時間ランキングの表示の仕方
 
 ```
-@ruboty dmm ranking 24
+@ruboty dmm cg 24
 --- output ---
 ```
 
-このコマンドは以下の4種類の引数を投げることが可能です。
+例えば、上記のコマンドはdoujin cgの24ランキングを通知します。
 
-- 24
-- weekly
-- monthly
-- total
+### 仕様可能な引数
+- 最初の引数はdmmのみ利用可能です。
+- 二個目の引数はall, comic, cg, game, voiceのみ利用可能です。
+- 三個目の引数は24, weekly, monthly, totalのみ利用可能です。
+
 
 ### 2. ruboty-cronを使い、特定の時間に通知する
 ruboty-cronを追加します。
