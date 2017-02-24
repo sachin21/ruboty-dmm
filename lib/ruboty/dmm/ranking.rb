@@ -22,10 +22,6 @@ module Ruboty
 
       private
 
-      def client
-        @client ||= Rdmm::Client.new(credentials)
-      end
-
       def credentials
         {
           api_id:       ENV['API_ID'],
