@@ -1,4 +1,4 @@
-:us: [:jp:](./doc/ja/README.md)
+:us: [:jp:](./doc/ja/README.md)　[![Build Status](https://travis-ci.org/sachin21/ruboty-dmm.svg?branch=master)](https://travis-ci.org/sachin21/ruboty-dmm)
 
 # Ruboty DMM
 
