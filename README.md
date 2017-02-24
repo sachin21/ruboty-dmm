@@ -18,11 +18,16 @@ From the bot in invited Slack's room:
 ### 1. Show the 24's ranking
 
 ```
-@ruboty dmm ranking 24
+@ruboty dmm cg 24
 --- output ---
 ```
 
-The command can be putting the argument for 24, weekly, monthly, total.
+For example, Above command will notify the doujin cg 24's ranking.
+
+### Available arguments
+- The first argument is only available for dmm.
+- The second argument is available for all, comic, cg, game, voice.
+- The third argument is available for 24, weekly, monthly, total.
 
 ### 2. Register a job by ruboty-cron
 Add ruboty-cron to your bot's Gemfile.
