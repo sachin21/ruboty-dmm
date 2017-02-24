@@ -2,10 +2,12 @@ module Ruboty
   module DMM
     class Ranking
       BASE_URL = 'http://www.dmm.co.jp'.freeze
-      RANKING_URL = '/dc/doujin/-/ranking-all/=/sort=popular/submedia=cg/term='.freeze
+      RANKING_URL =
 
-      def initialize(body)
-        @type = discriminate_argument(body)
+      def initialize(arguments)
+        @term = discriminate_term(arguments[:term])
+        @submedia = discriminate_submedia(arguments[:submedia])
+        @url = "#{BASE_URL}/dc/doujin/-/ranking-all/=/sort=popular/submedia=#{@submedia}/term=#{@term}"
         @agent = Agent.new.agent
       end
 
@@ -30,21 +32,17 @@ module Ruboty
       end
 
       def page
-        @agent.get("#{BASE_URL}#{RANKING_URL}#{@type.upcase}")
+        @agent.get(@url)
       end
 
-      def discriminate_argument(body)
-        if body =~ /24/
-          '24'
-        elsif body =~ /weekly/
-          'weekly'
-        elsif body =~ /monthly/
-          'monthly'
-        elsif body =~ /total/
-          'total'
-        else
-          raise TypeError
-        end
+      def discriminate_term(term)
+        return term if %w(24 weekly monthly total).include?(term)
+        raise TypeError
+      end
+
+      def discriminate_submedia(submedia)
+        return submedia if %w(all weekly cg game voice).include?(submedia)
+        raise TypeError
       end
     end
   end
