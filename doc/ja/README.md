@@ -41,7 +41,7 @@ gem 'ruboty-cron'
 deploy後タスクを登録します。
 
 ```
-@ruboty add job "* 21 * * *" @ruboty dmm ranking 24
+@ruboty add job "0 21 * * *" @ruboty dmm ranking 24
 ```
 
 ruboty-cronを使って毎日9時に通知することが出来ます。
