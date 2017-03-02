@@ -9,6 +9,7 @@ describe Ruboty::DMM::Ranking do
       let(:term) { '24' }
 
       it { is_expected.not_to be_empty }
+      it { is_expected.to include('1位').and include('10位') }
     end
 
     context 'with not registered argument' do
