@@ -39,10 +39,10 @@ gem 'ruboty-cron'
 Deployed after, register a task.
 
 ```
-@ruboty add job "0 21 * * *" @ruboty dmm ranking 24
+@ruboty add job "0 21 * * *" @ruboty dmm cg 24
 ```
 
-Notify the 24-hour ranking at every 9 pm.
+Notify the 24-hour ranking for CG genre at every 9 pm.
 
 
 ## Thanks
