@@ -1,19 +1,21 @@
 describe Ruboty::DMM::Ranking do
-  let(:instance) { described_class.new(arguments).call }
+  let(:attachments) { described_class.new(arguments).call }
+
   let(:submedia) { 'cg' }
   let(:arguments) { { submedia: submedia, term: term } }
 
   describe '#call' do
     context 'with 24 argument' do
-      subject { instance }
+      subject { attachments }
+
       let(:term) { '24' }
 
       it { is_expected.not_to be_empty }
-      it { is_expected.to include('1位').and include('10位') }
+      it { is_expected.to all(include(:title, :title_link, :image_url, :color)) }
     end
 
     context 'with not registered argument' do
-      subject { -> { instance.size } }
+      subject { -> { attachments } }
 
       let(:term) { 'hoge' }
 
