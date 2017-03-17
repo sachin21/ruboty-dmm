@@ -3,7 +3,7 @@
 # Ruboty DMM
 
 ## Ruboty DMMとは
-Ruboty DMMはDMM.R18のランキングを通知するためのボットです。
+Ruboty DMMはDMM.R18のランキングをSlackに通知するためのボットです。
 現在は同人誌のみになっています。
 
 ## インストール
