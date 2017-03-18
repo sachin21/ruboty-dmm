@@ -2,7 +2,7 @@ module Ruboty
   module DMM
     class Ranking
       BASE_URL = 'http://www.dmm.co.jp'.freeze
-      RANKING_URL =
+      COLORS = %w(7acc28 9dcc28 cc2828 cc6e28 28a9cc 3428cc cc28b4 c0cc28 2886cc 28cca9).map { |hex| "##{hex}" }.freeze
 
       def initialize(arguments)
         @term = discriminate_term(arguments[:term])
@@ -15,11 +15,11 @@ module Ruboty
         books = page.search('.rank-rankListItem.fn-setPurchaseChange').map do |element|
           [
             element.search('.rank-name').first.text.strip,
+            element.search('img').last.attributes['src'].value,
             "#{BASE_URL}#{element.search('.rank-name').first.search('a').first.attributes.first[1].value}"
           ]
         end
-        ranking = books.take(10).map.with_index(1) { |book, index| "#{index}位\nタイトル: #{book.first}\nURL: #{book.last}" }
-        ranking.join("\n\n")
+        books.take(10).zip(COLORS).map.with_index(1) { |((title, image, url), color), rank| { title: "#{rank}位: #{title}", title_link: url, image_url: image, color: color } }
       end
 
       private
