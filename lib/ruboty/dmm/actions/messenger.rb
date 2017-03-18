@@ -3,10 +3,26 @@ module Ruboty
     module Actions
       class Messenger < Ruboty::Actions::Base
         def call
-          ranking = Ruboty::DMM::Ranking.new(submedia: message.match_data[:submedia], term: message.match_data[:term]).call
-          message.reply(ranking)
+          attachments = Ruboty::DMM::Ranking.new(submedia: message.match_data[:submedia], term: message.match_data[:term]).call
+          term = term_converter(message.match_data[:term])
+          message.reply("#{term}の本日のランキングです。", attachments: attachments)
         rescue => exception
           message.reply("Failed by #{exception.class}")
+        end
+
+        private
+
+        def term_converter(term)
+          case term
+          when '24'
+            '24時間'
+          when 'weekly'
+            '週間'
+          when 'monthly'
+            '月間'
+          when 'total'
+            '全体'
+          end
         end
       end
     end
