@@ -1,4 +1,7 @@
 # v0.0.3 (Unreleased)
+- Correct READMEs
+- Add an example needed for each rank.
+
 ## Breaking changes
 - Show thumbnail for each ranks.
   - From this changes, dropped support except for Slack.
