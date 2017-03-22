@@ -3,7 +3,7 @@
 # Ruboty DMM
 
 ## What is Ruboty DMM
-Ruboty DMM is a notifying rankings for DMM.R18's Japanese doujin CG on Slack.
+Ruboty DMM is a notifying rankings for DMM.R18's Japanese adult contents on Slack.
 
 ## Installation
 On your gemfile:
