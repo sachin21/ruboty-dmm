@@ -1,4 +1,4 @@
-# v0.0.3 (Unreleased)
+# v0.0.3
 - Correct READMEs
 - Add an example needed for each rank.
 
