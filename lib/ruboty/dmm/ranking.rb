@@ -11,7 +11,7 @@ module Ruboty
         @agent = Agent.new.agent
       end
 
-      def call
+      def books
         books = page.search('.rank-rankListItem.fn-setPurchaseChange').map do |element|
           [
             element.search('.rank-name').first.text.strip,
