@@ -5,7 +5,7 @@ module Ruboty
         def call
           attachments = Ruboty::DMM::Ranking.new(submedia: message.match_data[:submedia], term: message.match_data[:term]).call
           term = term_converter(message.match_data[:term])
-          message.reply("#{term}の本日のランキングです。", attachments: attachments)
+          message.reply("#{term}のランキングです。", attachments: attachments)
         rescue => exception
           message.reply("Failed by #{exception.class}")
         end
