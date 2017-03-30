@@ -6,14 +6,14 @@
 Ruboty DMM is a notifying rankings for DMM.R18's Japanese adult contents on Slack.
 
 ## Installation
-On your gemfile:
+On your gemfile.
 
 ```
 gem 'ruboty-dmm'
 ```
 
 ## Usage
-From the bot in invited Slack's room:
+From the bot in invited Slack's room.
 
 ### 1. Show the 24's ranking
 
@@ -25,9 +25,9 @@ From the bot in invited Slack's room:
 For example, Above command will notify the doujin cg 24's ranking.
 
 ### Available arguments
-- The first argument is only available for dmm.
-- The second argument is available for all, comic, cg, game, voice.
-- The third argument is available for 24, weekly, monthly, total.
+- The first argument is only available for `dmm`.
+- The second argument is available for `all, comic, cg, game, voice`.
+- The third argument is available for `24, weekly, monthly, total`.
 
 ### 2. Register a job by ruboty-cron
 Add ruboty-cron to your bot's Gemfile.
@@ -46,7 +46,7 @@ Notify the 24-hour ranking for CG genre at every 9 pm.
 
 
 ## Thanks
-Thanks for creating awesome gems
+Thanks for creating awesome gems.
 
 - [r7kamura/ruboty](https://github.com/r7kamura/ruboty)
 - [r7kamura/ruboty-cron](https://github.com/r7kamura/ruboty-cron)
