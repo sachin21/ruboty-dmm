@@ -1,5 +1,5 @@
 # v0.0.3
-- Correct READMEs
+- Correct READMEs.
 - Add an example needed for each rank.
 
 ## Breaking changes
