@@ -14,7 +14,7 @@ gem 'ruboty-dmm'
 ```
 
 ## 使い方
-ボットを招待しているSlackの部屋にて
+ボットを招待しているSlackの部屋にて以下を実行します。
 
 ### 1. 24時間ランキングの表示の仕方
 
@@ -27,8 +27,8 @@ gem 'ruboty-dmm'
 
 ### 仕様可能な引数
 - 最初の引数はdmmのみ利用可能です。
-- 二個目の引数はall, comic, cg, game, voiceのみ利用可能です。
-- 三個目の引数は24, weekly, monthly, totalのみ利用可能です。
+- 二個目の引数は`all, comic, cg, game, voice`のみ利用可能です。
+- 三個目の引数は`24, weekly, monthly, total`のみ利用可能です。
 
 
 ### 2. ruboty-cronを使い、特定の時間に通知する
@@ -38,7 +38,7 @@ ruboty-cronを追加します。
 gem 'ruboty-cron'
 ```
 
-deploy後タスクを登録します。
+deploy後、タスクを登録します。
 
 ```
 @ruboty add job "0 21 * * *" @ruboty dmm cg 24
@@ -47,7 +47,7 @@ deploy後タスクを登録します。
 ruboty-cronを使ってCGジャンルのランキングを毎日9時に通知することが出来ます。
 
 ## 謝辞
-ruboty, ruboty-cronを作ってくれた[r7kamura氏](https://github.com/r7kamura)に感謝
+ruboty, ruboty-cronを作ってくれた[r7kamura氏](https://github.com/r7kamura)に感謝。
 
 - [r7kamura/ruboty](https://github.com/r7kamura/ruboty)
 - [r7kamura/ruboty-cron](https://github.com/r7kamura/ruboty-cron)
