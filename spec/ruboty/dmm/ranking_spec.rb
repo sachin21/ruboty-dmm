@@ -1,10 +1,10 @@
 describe Ruboty::DMM::Ranking do
-  let(:attachments) { described_class.new(arguments).call }
+  let(:attachments) { described_class.new(arguments).books }
 
   let(:submedia) { 'cg' }
   let(:arguments) { { submedia: submedia, term: term } }
 
-  describe '#call' do
+  describe '#books' do
     context 'with 24 argument' do
       subject { attachments }
 

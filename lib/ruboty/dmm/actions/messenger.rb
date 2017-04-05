@@ -3,7 +3,7 @@ module Ruboty
     module Actions
       class Messenger < Ruboty::Actions::Base
         def call
-          attachments = Ruboty::DMM::Ranking.new(submedia: message.match_data[:submedia], term: message.match_data[:term]).call
+          attachments = Ruboty::DMM::Ranking.new(submedia: message.match_data[:submedia], term: message.match_data[:term]).books
           term = term_converter(message.match_data[:term])
           message.reply("#{term}のランキングです。", attachments: attachments)
         rescue => exception
