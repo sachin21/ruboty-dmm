@@ -1,3 +1,8 @@
+# v0.0.4
+- Fix a sentence `"#{term}の本日のランキングです。"` -> `"#{term}のランキングです。"`.
+- Add periods to at the end of the sentence.
+- Rename a method from `call` to `books`.
+
 # v0.0.3
 - Correct READMEs.
 - Add an example needed for each rank.
