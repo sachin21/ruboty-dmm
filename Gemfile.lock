@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ruboty-dmm (0.0.3)
+    ruboty-dmm (0.0.4)
       mechanize
       ruboty
 
