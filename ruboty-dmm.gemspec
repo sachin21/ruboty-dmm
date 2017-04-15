@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['sachin21dev@gmail.com']
 
   spec.summary       = "A bot for DMM R18's rankings"
-  spec.description   = "A bot for DMM R18's rankings, 24, weeks, months"
+  spec.description   = "A bot for DMM R18's rankings for 24, weeks, months"
   spec.homepage      = 'https://github.com/sachin21/ruboty-dmm'
   spec.license       = 'MIT'
 
