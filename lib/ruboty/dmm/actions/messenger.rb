@@ -22,6 +22,8 @@ module Ruboty
             '月間'
           when 'total'
             '全体'
+          else
+            raise TypeError
           end
         end
       end
