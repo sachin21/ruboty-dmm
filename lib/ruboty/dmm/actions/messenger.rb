@@ -3,9 +3,9 @@ module Ruboty
     module Actions
       class Messenger < Ruboty::Actions::Base
         def call
-          attachments = Ruboty::DMM::Ranking.new(submedia: message.match_data[:submedia], term: message.match_data[:term]).books
+          attachments = Ruboty::DMM::Ranking.new(message.match_data).arts
           term = term_converter(message.match_data[:term])
-          message.reply("#{term}のランキングです。", attachments: attachments)
+          message.reply("#{term}のランキングです。", attachments: attachments) # temporary ignoring tags. I have to add interface for tags
         rescue => exception
           message.reply("Failed by #{exception.class}")
         end
