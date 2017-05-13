@@ -21,7 +21,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_runtime_dependency 'ruboty'
-  spec.add_runtime_dependency 'mechanize'
+  spec.add_runtime_dependency 'dmm-crawler', '0.0.4'
 
   spec.add_development_dependency 'bundler', '~> 1.14'
   spec.add_development_dependency 'rake', '~> 10.0'
