@@ -1,3 +1,7 @@
+# v0.0.5
+- Add Ruby versions to `.travis.yml`.
+- Replace owned crawler with dmm-crawler gem.
+
 # v0.0.4
 - Fix a sentence `"#{term}の本日のランキングです。"` -> `"#{term}のランキングです。"`.
 - Add periods to at the end of the sentence.
