@@ -2,6 +2,11 @@
 
 # Ruboty DMM
 
+## :warning: Cation :warning:
+
+FANZA does not accepted crawling pages so I recommend to not use this gem.
+If you using ruboty-dmm and your account banned, I do not take any responsibility or liability for any damage or loss caused by mine gem.
+
 ## What is Ruboty DMM
 Ruboty DMM is a notifying rankings for DMM.R18's Japanese adult contents on Slack.
 
