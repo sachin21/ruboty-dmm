@@ -2,6 +2,11 @@
 
 # Ruboty DMM
 
+## :warning: 注意 :warning:
+
+FANZA(旧DMM.R18)はクロールを禁止しているので、使用しないことをおすすめします。
+ruboty-dmmを利用するにあたって不利益や損害が生じたとしても一切の責任を負わないものとします。
+
 ## Ruboty DMMとは
 Ruboty DMMはDMM.R18のランキングをSlackに通知するためのボットです。
 現在は同人のみになっています。
